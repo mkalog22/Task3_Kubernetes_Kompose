@@ -1,9 +1,8 @@
-This application is a multi-container environment set up using Docker Compose, consisting of a Python Flask web server and a MongoDB database. 
+It is Flask web application that retrieves data from a MongoDB database and calculates the sum of specific values. 
 
-The MongoDB container stores a collection of numerical data. 
-The Python Flask application connects to this MongoDB instance, retrieves the numerical data, computes the sum of the values, and displays the result as a JSON response. 
+The application is containerized using Docker 
+and orchestrated with Kubernetes using MicroK8s. 
 
-This setup demonstrates a basic use case of a multi-container Docker environment, showcasing how different services can interact with each other within a Docker network.
+We utilized Kompose to convert our Docker Compose configuration into Kubernetes manifests, simplifying the transition to Kubernetes. 
 
-Access the Result on Localhost:
-Open your web browser and navigate to http://localhost:5000 to see the sum displayed as JSON output.
+
